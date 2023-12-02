@@ -5,7 +5,8 @@
   "main": "index.js",
   "repository": "https://github.com/marceloaraujodev/testing.git",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "echo 'Build step'"
   },
   "author": "",
   "license": "ISC",
