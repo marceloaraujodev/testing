@@ -3,6 +3,8 @@ import express from 'express';
 const app = express();
 const PORT = 3000 || process.env.PORT;
 
+console.log('hiiiii')
+
 const currentDate = new Date();
 const options = { 
     day: '2-digit', 
