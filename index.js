@@ -1,7 +1,7 @@
 import express from 'express';
 
 const app = express();
-const PORT = 3000 || process.env.PORT;
+// const PORT = 3000 || process.env.PORT;
 
 const currentDate = new Date();
 const options = { 
@@ -16,9 +16,7 @@ const formattedDate = currentDate.toLocaleDateString('en-GB', options);
 
 
 app.get('/', (req, res) => {
-    res.status(200).json({
-        message: 'hi'
-    })
+    res.status(200).send('<h1>Finally Working!</h1>')
 });
 
 app.get('/api/v1/instagram', (req, res) => {
@@ -58,6 +56,6 @@ app.get('/api/v1/:id', (req, res) => {
     res.status(200).json({param: req.params.id})
 })
 
-app.listen(PORT, () => {
-    console.log(`Server is running at PORT: ${PORT}`);
-});
+// app.listen(PORT, () => {
+//     console.log(`Server is running at PORT: ${PORT}`);
+// });
