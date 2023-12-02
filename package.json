@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "repository": "https://github.com/marceloaraujodev/testing",
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "build": "echo 'Build step'"
